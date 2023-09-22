@@ -1,0 +1,116 @@
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    color:rgb(0, 0, 0);
+    font-size: 1.5rem;
+    overflow-x: hidden;
+}
+.lines{
+    display: none;
+    font-size: 3rem;
+    color: white;
+    margin: 0px 8px;
+    padding: 0px 8px;
+}
+.cross{
+    display: none;
+    width: 100%;
+    text-align: start;
+    margin-left: 40px;
+    height: 50px;
+    font-size: 33px;
+    font-weight: bold;
+}
+li > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(255, 12, 12);
+}
+li{
+    list-style: none;
+    height:40px; 
+    font-size: 1.7rem;
+    /* border: 2px solid green;     */
+    align-items: center;
+}
+/* .border{
+    border: 2px solid red;
+} */
+.head{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    display: flex;
+    height: 100%;
+    margin: 0px;
+
+}
+.list{
+    padding: 7px 12px;
+    margin: 2px 10px;
+    text-align: center;
+}
+header::before{
+    display: flex;
+    background: url('blogs.png')no-repeat center center/cover;
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100vw;
+    height: 800px;
+    z-index: -1;
+    opacity: 1;
+}
+@media only screen and (max-width:700px){
+    .lines{
+        display: block;
+        
+    }
+    .cross{
+        display: block;
+        position: fixed !important;
+        top: 0px !important;
+        left: 0px !important;
+        padding: 0px;
+        margin: 10px 15px;
+        font-family: cursive;
+    }
+    .nav{
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: cursive;
+        overflow: hidden;
+        margin: 0px;
+        transition:all 2s ease;
+    }
+
+    .list{
+        margin: 10px;
+    }
+    
+}
+.blogs{
+    display: flex;
+    width: 60px;
+    height: auto;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="blogs.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="head border">
+        <div class="lines" id="hamstrt" onclick="start_login()"><span class="item">&#9776;</span></div>
+        <ul class="nav border" >
+            <li class="cross" id="list-1" onclick="end_login()"><span class="item">&#9747;</span></li>
+            <li class="list" id="list-2"><a href="index.html">Home</a></li>
+            <li class="list" id="list-3"><a href="#">About</a></li>
+            <li class="list" id="list-4"><a href="#">Blogs</a></li>
+        </ul>
+    </header>
+    <section class="sec">
+        <div class="blog">
+            <form action="#" method="post">
+                <div class="blog_head">
+                    <input type="text" name="heading" id="h3" value="">
+                </div>
+                <div class="blog_body">
+                    <!-- <input type="textarea" name="blog_text" id="blogtxt" cols="30" minlength="3" wrap="hard"></input> -->
+                    <textarea id="blogtxt" name="blog_text"></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit" value="Submit" onclick="store()">Submit</button>
+                    <button type="reset" value="Reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="blogs.js"></script>
+</body>
+</html>
